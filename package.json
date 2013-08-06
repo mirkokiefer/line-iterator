@@ -1,0 +1,15 @@
+{
+  "name": "line-stream",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "Mirko Kiefer <mail@mirkokiefer.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "stream-iterator": "0.0.1",
+    "async-iterators": "0.0.3"
+  }
+}
