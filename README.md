@@ -25,4 +25,4 @@ lineIterator.next(function(err, line) {
 ##Contributors
 
 - Mirko Kiefer ([@mirkokiefer](https://github.com/mirkokiefer))
-- Michael Still
+- Michael Still ([@Mitb](https://github.com/Mitb))
