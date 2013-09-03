@@ -32,7 +32,7 @@ describe('line-stream', function() {
     var fileStream = fs.createReadStream(testFile, {encoding: 'utf8'})
     var fileIterator = createStreamIterator(fileStream)
     var lineIterator = createLineIterator(fileIterator)
-    iterators.map(lineIterator, function(err, each) { return each }, function(err, res) {
+    iterators.toArray(lineIterator, function(err, res) {
       assert.equal(res.length, 10001)
       var expectedRes = testData.concat([''])
       assert.deepEqual(res, expectedRes)
