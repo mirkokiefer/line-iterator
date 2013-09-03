@@ -9,8 +9,7 @@
   "author": "Mirko Kiefer <mail@mirkokiefer.com>",
   "license": "BSD",
   "devDependencies": {
-    "stream-iterator": "0.0.1",
-    "async-iterators": "~0.1.2",
+    "async-iterators": "~0.2.2",
     "async": "~0.2.9",
     "mocha": "~1.12.0"
   }

@@ -2,7 +2,6 @@
 var assert = require('assert')
 var fs = require('fs')
 var createLineIterator = require('../lib/index')
-var createStreamIterator = require('stream-iterator')
 var iterators = require('async-iterators')
 var async = require('async')
 
@@ -30,7 +29,7 @@ describe('line-stream', function() {
   })
   it('should read from a character stream and transform to a line stream', function(done) {
     var fileStream = fs.createReadStream(testFile, {encoding: 'utf8'})
-    var fileIterator = createStreamIterator(fileStream)
+    var fileIterator = iterators.fromReadableStream(fileStream)
     var lineIterator = createLineIterator(fileIterator)
     iterators.toArray(lineIterator, function(err, res) {
       assert.equal(res.length, 10001)
